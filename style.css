@@ -3,20 +3,26 @@ body {
   background-color: #FFFBEF;
 }
 
+dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 35px 30px;
+  margin: 0;
+}
+
 dt {
-  float: left;
+  width: 20%;
   font-weight: bold;
-  margin-left: 30px;
+  margin-bottom: 40px;
 }
 
 dd {
-  margin: 35px 0 40px 0;
-  padding-left: 202px;
-}
-
-.last {
-  margin: 35px 0 75px 0;
-  padding-left: 202px;
+  width: 80%;
+  margin-left: 0;
+  margin-bottom: 40px;
 }
 
 .header__logo {
@@ -32,7 +38,7 @@ dd {
 .wrapper {
   max-width: 920px;
   padding: 0 20px;
-  margin: 0 auto;
+  margin: 0 auto 100px auto;
 }
 
 .description__logo {
@@ -102,19 +108,18 @@ dd {
 
 @media screen and (max-width: 600px) {
   dl {
-    margin-top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 35px 0;
   }
   dt {
-    float: none;
-    margin: 0 0 10px 0;
+    width: 100%;
+    margin-bottom: 10px;
   }
   dd {
-    padding: 0 0 0 10px;
-    margin: 0 0 40px 0;
-  }
-  .last {
-    margin: 0;
+    width: 98%;
     padding: 0 0 0 10px;
     margin: 0 0 40px 0;
   }
