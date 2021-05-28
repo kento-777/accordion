@@ -11,6 +11,7 @@ dl {
       flex-wrap: wrap;
   padding: 35px 30px;
   margin: 0;
+  border-bottom: 1px solid #000;
 }
 
 dt {
@@ -45,8 +46,7 @@ dd {
   display: block;
   width: 100%;
   text-align: center;
-  border-top: #666 1px solid;
-  border-bottom: #666 1px solid;
+  border-top: #000 1px solid;
   cursor: pointer;
   position: relative;
 }
@@ -56,7 +56,8 @@ dd {
 }
 
 .description__logo p {
-  margin: 40px 0 40px 30px;
+  padding: 40px 0 40px 30px;
+  margin: 0;
   text-align: left;
   font-weight: bold;
   font-size: 18px;
@@ -104,6 +105,10 @@ dd {
   background-color: #FFDA5F;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
+}
+
+#programmer p {
+  border-bottom: #000 1px solid;
 }
 
 @media screen and (max-width: 600px) {
