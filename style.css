@@ -11,7 +11,6 @@ dl {
       flex-wrap: wrap;
   padding: 35px 30px;
   margin: 0;
-  border-bottom: 1px solid #000;
 }
 
 dt {
@@ -53,6 +52,7 @@ dd {
 
 .description__logo.isActive {
   background-color: #FFDA5F;
+  border-bottom: 0px none;
 }
 
 .description__logo p {
@@ -107,8 +107,16 @@ dd {
           transition-duration: 1s;
 }
 
-#programmer p {
+.non-active {
   border-bottom: #000 1px solid;
+}
+
+.active {
+  border-bottom: 0px none;
+}
+
+.last-dl {
+  border-bottom: 1px solid #000;
 }
 
 @media screen and (max-width: 600px) {
@@ -129,7 +137,7 @@ dd {
     margin: 0 0 40px 0;
   }
   .description__logo p {
-    margin-left: 0;
+    padding-left: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

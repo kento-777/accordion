@@ -8,7 +8,6 @@ dl {
   flex-wrap: wrap;
   padding: 35px 30px;
   margin: 0;
-  border-bottom: 1px solid #000;
 }
 
 
@@ -55,6 +54,8 @@ dd {
 
   &.isActive {
     background-color: #FFDA5F;
+    border-bottom: 0px none;
+    
   }
 
   p {
@@ -114,11 +115,22 @@ dd {
   }
 }
 
-#programmer {
-  p {
-    border-bottom: #000 1px solid;
-  }
+
+ 
+
+.non-active {
+  border-bottom: #000 1px solid;
 }
+
+.active {
+  border-bottom:  0px none;
+}
+
+
+.last-dl {
+  border-bottom: 1px solid #000;
+}
+
 
 
 
@@ -142,7 +154,7 @@ dd {
 
   .description__logo {
     p {
-      margin-left: 0;
+      padding-left: 0;
     }
   }
 }
