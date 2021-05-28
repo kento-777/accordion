@@ -45,6 +45,10 @@ dd {
   position: relative;
 }
 
+.description__logo.isActive {
+  background-color: #FFDA5F;
+}
+
 .description__logo p {
   margin: 40px 0 40px 30px;
   text-align: left;
@@ -94,10 +98,6 @@ dd {
   background-color: #FFDA5F;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
-}
-
-.description__logo.isActive {
-  background-color: #FFDA5F;
 }
 
 @media screen and (max-width: 600px) {

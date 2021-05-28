@@ -46,6 +46,12 @@ dd {
   border-bottom: #666 1px solid;
   cursor:pointer;
   position: relative;
+
+  &.isActive {
+    background-color: #FFDA5F;
+  }
+
+  
   
   p {
     margin: 40px 0 40px 30px;
@@ -88,9 +94,11 @@ dd {
         transform:rotate(0deg);
         transition-duration: .5s;
       }
+    
 
       &.close {
         transition-duration: .5s;
+        
       }
     }
   }
@@ -99,11 +107,8 @@ dd {
     background-color: #FFDA5F;
     transition-duration: 1s;
   }
-
-  &.isActive {
-    background-color: #FFDA5F;
-  }
 }
+
 
 
 @media screen and(max-width:600px) {
@@ -132,7 +137,5 @@ dd {
     p {
       margin-left: 0;
     }
-    
-    
   }
 }
